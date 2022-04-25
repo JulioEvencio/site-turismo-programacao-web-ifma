@@ -4,12 +4,6 @@
 
 @charset "utf-8";
 
-* {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-}
-
 :root {
 	--azul-escuro: #2f5572;
 	--azul-escuro-texto: #4f6e87;
