@@ -128,6 +128,205 @@
 }
 
 /*
+	section - servicos
+*/
+.servicos-section {
+	background-color: var(--azul-escuro);
+	padding: 100px 0px;
+}
+
+.imagem-texto {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 50px;
+}
+
+.servicos-section .imagem-texto__titulo {
+	color: var(--branco);
+	font-size: 2.5em;
+	margin-left: 10px;
+}
+
+.servicos-section__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.servicos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 100px;
+	grid-row-gap: 50px;
+}
+
+.servicos__item {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 400px;
+	padding: 10px;
+}
+
+.servicos__texto {
+	margin-left: 50px;
+}
+
+.servicos__titulo {
+	color: var(--branco);
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+
+.servicos__paragrafo {
+	color: var(--branco);
+	text-align: justify;
+}
+
+/*
+	section - testemunhas
+*/
+.testemunhas {
+	background-image: url("../img/kuala-lumpur.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.testemunhas__container--opacity {
+	background-color: var(--branco-transparente);
+	padding: 100px 0px;
+}
+
+.testemunhas .imagem-texto__titulo {
+	color: var(--azul-escuro);
+	font-size: 2.5em;
+	margin-left: 10px;
+}
+
+.depoimentos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 50px;
+	margin-top: 100px;
+}
+
+.depoimentos__item {
+	background-color: var(--branco-transparente);
+	text-align: center;
+	padding: 25px;
+}
+
+.depoimentos__imagem {
+	border: 5px solid var(--branco);
+	border-radius: 50%;
+	position: relative;
+	top: -100px;
+	margin-bottom: -100px;
+	width: 160px;
+	height: 160px;
+	z-index: 999;
+}
+
+.depoimentos__viagens {
+	color: var(--laranja);
+}
+
+.depoimentos__relato {
+	text-align: justify;
+}
+
+/*
+	versao tablet
+*/
+@media (max-width: 800px) {
+	/*
+		section - historia
+	*/
+	.historia__titulo {
+		font-size: 1.5em;
+	}
+
+	.historia__paragrafo {
+		font-size: 1.3em;
+	}
+
+	.divisor-texto-imagem__figure {
+		display: none;
+	}
+
+	/*
+		section - servicos
+	*/
+	.servicos-section .imagem-texto__titulo {
+		color: var(--branco);
+		font-size: 1.5em;
+		margin-left: 10px;
+	}
+
+	.servicos {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 50px;
+	}
+
+	.servicos__item {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: 400px;
+	}
+
+	.servicos__titulo {
+		color: var(--branco);
+		text-align: left;
+		font-size: 1.2em;
+		font-weight: normal;
+		margin-bottom: 15px;
+	}
+
+	/*
+		section - testemunhas
+	*/
+	.testemunhas .imagem-texto__titulo {
+		color: var(--azul-escuro);
+		font-size: 1.5em;
+		margin-left: 10px;
+	}
+
+	.depoimentos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 50px;
+		grid-row-gap: 100px;
+		margin-top: 100px;
+		padding: 10px;
+	}
+
+	.depoimentos__item {
+		background-color: var(--branco-transparente);
+		text-align: center;
+		padding: 25px;
+	}
+
+	.depoimentos__imagem {
+		border: 5px solid var(--branco);
+		border-radius: 50%;
+		position: relative;
+		top: -100px;
+		margin-bottom: -100px;
+		width: 160px;
+		height: 160px;
+		z-index: 999;
+	}
+}
+
+/*
 	versao mobile
 */
 @media (max-width: 600px) {
@@ -153,17 +352,37 @@
 	}
 
 	/*
-		section - historia
+		section - testemunhas
 	*/
-	.historia__titulo {
+	.testemunhas .imagem-texto__titulo {
+		color: var(--azul-escuro);
 		font-size: 1.5em;
+		margin-left: 10px;
 	}
 
-	.historia__paragrafo {
-		font-size: 1.3em;
+	.depoimentos {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 50px;
+		grid-row-gap: 100px;
+		margin-top: 100px;
+		padding: 10px;
 	}
 
-	.divisor-texto-imagem__figure {
-		display: none;
+	.depoimentos__item {
+		background-color: var(--branco-transparente);
+		text-align: center;
+		padding: 25px;
+	}
+
+	.depoimentos__imagem {
+		border: 5px solid var(--branco);
+		border-radius: 50%;
+		position: relative;
+		top: -100px;
+		margin-bottom: -100px;
+		width: 160px;
+		height: 160px;
+		z-index: 999;
 	}
 }
