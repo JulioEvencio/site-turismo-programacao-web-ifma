@@ -1,0 +1,43 @@
+/*
+	Arquivo para o footer
+*/
+@charset "utf-8";
+
+:root {
+	--azul-escuro: #2f5572;
+	--azul-escuro-texto: #4f6e87;
+	--azul-transparente: rgba(108, 133, 149, 0.65);
+	--branco: #fff;
+	--branco-transparente: rgba(255, 255, 255, 0.50);
+	--laranja: #d59541;
+	--preto: black;
+
+	--fonte-titulo: serif;
+	--fonte-paragrafo: sans-serif;
+	--fonte-link: sans-serif;
+	--fonte-botao: sans-serif;
+}
+
+.footer {
+	background-color: var(--azul-escuro);
+	padding: 30px;
+}
+
+.footer__container {
+	text-align: center;
+}
+
+.footer__paragrafo {
+	color: var(--branco);
+	padding: 10px;
+}
+
+.footer__link {
+	color: var(--branco);
+}
+
+@media (max-width: 800px) {
+	.footer__paragrafo {
+		text-align: justify;
+	}
+}
