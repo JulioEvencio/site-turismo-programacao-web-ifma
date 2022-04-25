@@ -1,0 +1,85 @@
+/*
+	Arquivo para o main do index
+*/
+@charset "utf-8";
+
+:root {
+	--azul-escuro: #2f5572;
+	--azul-escuro-texto: #4f6e87;
+	--azul-transparente: rgba(108, 133, 149, 0.65);
+	--branco: #fff;
+	--branco-transparente: rgba(255, 255, 255, 0.50);
+	--laranja: #d59541;
+	--preto: black;
+
+	--fonte-titulo: serif;
+	--fonte-paragrafo: sans-serif;
+	--fonte-link: sans-serif;
+	--fonte-botao: sans-serif;
+}
+
+/*
+	section - inicio
+*/
+.inicio {
+	background-image: url("../img/inicio-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.inicio__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 15px);
+	min-height: 500px;
+	max-height: 720px;
+	padding: 10px;
+}
+
+.inicio__titulo, .inicio__subtitulo {
+	color: var(--azul-escuro);
+	font-weight: normal;
+}
+
+.inicio__titulo {
+	font-size: 4em;
+}
+
+.inicio__subtitulo {
+	font-size: 2.5em;
+}
+
+.inicio__paragrafo {
+	color: var(--branco);
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.divisor-hr {
+	background-color: var(--azul-escuro);
+	height: 15px;
+	border-top: 1px solid var(--branco);
+}
+
+@media (max-width: 600px) {
+	.inicio__titulo, .inicio__subtitulo {
+		font-weight: bold;
+	}
+
+	.inicio__titulo {
+		font-size: 1.5em;
+	}
+
+	.inicio__subtitulo {
+		font-size: 1.2em;
+	}
+
+	.inicio__paragrafo {
+		color: var(--branco);
+		text-align: center;
+		font-size: 1em;
+	}
+}
