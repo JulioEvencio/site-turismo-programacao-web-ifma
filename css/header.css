@@ -20,9 +20,10 @@
 }
 
 .header {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0px;
+	background-color: var(--azul-transparente);
 }
 
 .header__container {
@@ -31,7 +32,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--azul-transparente);
 }
 
 .frase-bar {
