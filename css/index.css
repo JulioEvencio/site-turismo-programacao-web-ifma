@@ -22,7 +22,7 @@
 	section - inicio
 */
 .inicio {
-	background-image: url("../img/inicio-background.jpg");
+	background-image: url("../img/mountains-g382a3c23c_1280.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
@@ -64,7 +64,76 @@
 	border-top: 1px solid var(--branco);
 }
 
+/*
+	section - historia
+*/
+.historia {
+	text-align: center;
+}
+
+.historia__titulo {
+	font-size: 2em;
+	margin: 50px 0px;
+	padding: 0px 10px;
+}
+
+.historia__paragrafo {
+	color: var(--laranja);
+	font-size: 1.5em;
+	margin: 50px auto;
+	padding: 0px 10px;
+}
+
+.historia__figure {
+	width: 100%;
+}
+
+.historia__imagem {
+	width: 100%;
+}
+
+.divisor-texto-imagem {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.divisor-texto-imagem__img {
+	max-width: 427px;
+}
+
+.historia-conteudo {
+	padding: 0px 15px;
+}
+
+.historia-conteudo__titulo {
+	text-align: left;
+	font-weight: normal;
+	margin: 0px;
+	padding: 10px;
+}
+
+.historia-conteudo__paragrafo {
+	color: var(--azul-escuro);
+	text-align: justify;
+	font-size: 1em;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.historia-conteudo__link {
+	color: var(--laranja);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*
+	versao mobile
+*/
 @media (max-width: 600px) {
+	/*
+		section - inicio
+	*/
 	.inicio__titulo, .inicio__subtitulo {
 		font-weight: bold;
 	}
@@ -81,5 +150,20 @@
 		color: var(--branco);
 		text-align: center;
 		font-size: 1em;
+	}
+
+	/*
+		section - historia
+	*/
+	.historia__titulo {
+		font-size: 1.5em;
+	}
+
+	.historia__paragrafo {
+		font-size: 1.3em;
+	}
+
+	.divisor-texto-imagem__figure {
+		display: none;
 	}
 }
