@@ -36,7 +36,6 @@
 	height: calc(100vh - 15px);
 	min-height: 500px;
 	max-height: 720px;
-	padding: 10px;
 }
 
 .inicio__titulo, .inicio__subtitulo {
@@ -74,14 +73,12 @@
 .historia__titulo {
 	font-size: 2em;
 	margin: 50px 0px;
-	padding: 0px 10px;
 }
 
 .historia__paragrafo {
 	color: var(--laranja);
 	font-size: 1.5em;
 	margin: 50px auto;
-	padding: 0px 10px;
 }
 
 .historia__figure {
@@ -263,66 +260,27 @@
 		section - servicos
 	*/
 	.servicos-section .imagem-texto__titulo {
-		color: var(--branco);
 		font-size: 1.5em;
-		margin-left: 10px;
 	}
 
 	.servicos {
-		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: 50px;
-	}
-
-	.servicos__item {
-		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		max-width: 400px;
 	}
 
 	.servicos__titulo {
-		color: var(--branco);
-		text-align: left;
 		font-size: 1.2em;
-		font-weight: normal;
-		margin-bottom: 15px;
 	}
 
 	/*
 		section - testemunhas
 	*/
 	.testemunhas .imagem-texto__titulo {
-		color: var(--azul-escuro);
 		font-size: 1.5em;
-		margin-left: 10px;
 	}
 
 	.depoimentos {
-		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 50px;
 		grid-row-gap: 100px;
-		margin-top: 100px;
-		padding: 10px;
-	}
-
-	.depoimentos__item {
-		background-color: var(--branco-transparente);
-		text-align: center;
-		padding: 25px;
-	}
-
-	.depoimentos__imagem {
-		border: 5px solid var(--branco);
-		border-radius: 50%;
-		position: relative;
-		top: -100px;
-		margin-bottom: -100px;
-		width: 160px;
-		height: 160px;
-		z-index: 999;
 	}
 }
 
@@ -346,43 +304,24 @@
 	}
 
 	.inicio__paragrafo {
-		color: var(--branco);
-		text-align: center;
 		font-size: 1em;
+	}
+
+	/*
+		section - servicos
+	*/
+	.imagem-texto__imagem, .servicos__figure {
+		display: none;
+	}
+
+	.servicos__texto {
+		margin-left: 0px;
 	}
 
 	/*
 		section - testemunhas
 	*/
-	.testemunhas .imagem-texto__titulo {
-		color: var(--azul-escuro);
-		font-size: 1.5em;
-		margin-left: 10px;
-	}
-
 	.depoimentos {
-		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-column-gap: 50px;
-		grid-row-gap: 100px;
-		margin-top: 100px;
-		padding: 10px;
-	}
-
-	.depoimentos__item {
-		background-color: var(--branco-transparente);
-		text-align: center;
-		padding: 25px;
-	}
-
-	.depoimentos__imagem {
-		border: 5px solid var(--branco);
-		border-radius: 50%;
-		position: relative;
-		top: -100px;
-		margin-bottom: -100px;
-		width: 160px;
-		height: 160px;
-		z-index: 999;
 	}
 }
